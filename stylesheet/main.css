@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+}
+
+.hero {
+  background-image: url("/img/black-and-white-car-dark-219.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background: #c4c4c436;
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__text {
+  position: absolute;
+  top: 47%;
+  left: 12.75%;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.hero__text::after {
+  position: absolute;
+  content: "";
+  height: 10px;
+  bottom: -30%;
+  left: 0;
+  margin: 0 auto;
+  width: 20%;
+  background: #fff;
+}
+
+.hero__paragraph {
+  width: 40%;
+  position: absolute;
+  top: 73%;
+  left: 12.75%;
+  font-size: 18px;
+  text-align: center;
+}
+
+.hero__btn {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #fff;
+  background: transparent;
+  position: absolute;
+  bottom: 5%;
+  left: 25.4%;
+  font-size: 18px;
+  color: #fff;
+}
+
+.nav-headline {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav-links__item {
+  list-style: none;
+}
+
+.nav-links__anchor {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
